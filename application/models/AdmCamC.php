@@ -17,7 +17,7 @@ class AdmCamC extends CI_Model
         $this->db->delete('camioneta');
         return TRUE;
     }
-
+ 
     function insertC(){
         $data = array(
             'idcamioneta' => $this->input->post('idcamioneta'),
@@ -27,7 +27,6 @@ class AdmCamC extends CI_Model
             'pais_de_origen' => $this->input->post('pais_de_origen'),
             'clase_vehiculo' => $this->input->post('clase_vehiculo')
     );
-    
     $this->db->insert('camioneta', $data);
     }
 } ?>

@@ -14,13 +14,14 @@
                 <div class="col-4">
                     <div class="mb-3">
                         <label class="form-kabel">Modelo: </label>
-                        <select name="modelo">
-                            <option value="FE">Ford Escape</option>
-                            <option value="NX">Nissan X-Trail</option>
-                            <option value="SA">SEAT Ateca</option>
-                            <option value="K">Kia</option>
-                            <option value="S">Sportage</option>
-                            <option value="another">Otro</option>
+                        <select name="modelo" required>
+                            <option value="Ford Escape">Ford Escape</option>
+                            <option value="Nissan X-Trail">Nissan X-Trail</option>
+                            <option value="SEAT Ateca">SEAT Ateca</option>
+                            <option value="Kia">Kia</option>
+                            <option value="Sportage">Sportage</option>
+                            <option value="Otro">Otro</option>
+                            <option></option>
                         </select>
                     </div>
                 </div>
