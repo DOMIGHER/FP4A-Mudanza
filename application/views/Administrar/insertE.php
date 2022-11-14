@@ -1,6 +1,6 @@
 <div class="container">
     <?php echo validation_errors(); ?>
-    <form action="<?=base_url('index.php/AdmEm/insertE') ?>" method="POST">
+    <form action="<?= base_url('index.php/AdmEm/insertE') ?>" method="POST">
         <div class="row">
             <div class="row">
 
@@ -154,7 +154,7 @@
         </div>
 </div>
 
-</form> 
+</form>
 <style>
     #vertical-bar {
         border-left: 1px solid rgb(0, 0, 0);

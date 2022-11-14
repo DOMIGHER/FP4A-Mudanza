@@ -29,7 +29,7 @@ class AdmEmC extends CI_Model
             'nacionalidad' => $this->input->post('nacionalidad'),
             'sexo' => $this->input->post('sexo'),
             'fecha_nacimiento' => $this->input->post('fecha_nacimiento'),
-            'fecha_nacimiento' => $this->input->post('num_licencia'),
+            'num_licencia' => $this->input->post('num_licencia'),
             'rfc' => $this->input->post('rfc'),
             'antecedentes_penales' => $this->input->post('antecedentes_penales'),
             'telefono_fijo' => $this->input->post('telefono_fijo'),
