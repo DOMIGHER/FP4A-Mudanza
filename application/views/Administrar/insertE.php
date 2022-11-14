@@ -65,10 +65,10 @@
                     <div class="mb-3">
                         <label class="form-kabel">Pais de nacimiento: </label>
                         <select name="nacionalidad">
-                            <option value="M">Mexíco</option>
-                            <option value="EU">Estados Unidos</option>
-                            <option value="C">Canada</option>
-                            <option value="O">Otro</option>
+                            <option value="Mexíco">Mexíco</option>
+                            <option value="Estados Unidos">Estados Unidos</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Otro">Otro</option>
                         </select>
                     </div>
                 </div>
@@ -77,8 +77,8 @@
                     <div class="mb-3">
                         <label class="form-kabel">Sexo</label>
                         <select name="sexo">
-                            <option value="H">Hombre</option>
-                            <option value="M">Mujer</option>
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
                         </select>
                     </div>
                 </div>
@@ -130,8 +130,8 @@
                     <div class="mb-3">
                         <label class="form-kabel">Carta de antecedentes no penales</label>
                         <select name="antecedentes_penales">
-                            <option value="S">Si</option>
-                            <option value="N">No</option>
+                            <option value="Si">Si</option>
+                            <option value="No">No</option>
                         </select>
                     </div>
                 </div>

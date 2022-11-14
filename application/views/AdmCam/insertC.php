@@ -44,10 +44,10 @@
                     <div class="mb-3">
                         <label class="form-kabel">Pais de origen: </label>
                         <select name="pais_de_origen">
-                            <option value="M">Mexíco</option>
-                            <option value="EU">Estados Unidos</option>
-                            <option value="C">Canada</option>
-                            <option value="O">Otro</option>
+                            <option value="Mexíco">Mexíco</option>
+                            <option value="Estados Unidos">Estados Unidos</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Otro">Otro</option>
                         </select>
                     </div>
                 </div>
@@ -56,10 +56,10 @@
                     <div class="mb-3">
                         <label class="form-label">Clave del vehiculo: </label>
                         <select name="clase_vehiculo">
-                            <option value="M">Volteo</option>
-                            <option value="EU">Carga</option>
-                            <option value="C">Mudanza de inmuebles</option>
-                            <option value="O">Otro</option>
+                            <option value="Volteo">Volteo</option>
+                            <option value="Carga">Carga</option>
+                            <option value="Mudanza de inmuebles">Mudanza de inmuebles</option>
+                            <option value="Otro">Otro</option>
                         </select>
                     </div>
                 </div>
