@@ -3,12 +3,15 @@
 class AdmcuentaC extends CI_Controller{
 
     public function verCuenta(){
-        $this->load->view('AdmCuenta/AdmvercuentaV.php');
+        
 
     }
 
     public function ModCuenta(){
-        print"Modificar cuenta";
+        $this->load->model('AdmCuentaM');
+        $data['administrador'] = $this->AdmCuentaM->getCuenta();
+
+        $this->load->view('AdmCuenta/AdmvercuentaV.php', $data);
 
     }
 
