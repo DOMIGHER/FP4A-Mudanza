@@ -8,53 +8,124 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
-
 <div class="card text-center">
   <div class="card-body">
-
     <h4>Administra cuenta</h3>
   </div>
 </div>
 
-<div class="position-absolute top-50 start-50 translate-middle">
-<from>
 
-    <label for="exampleInputEmail1" class="form-label">Nombre</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+<div class="container">
+  <div class="row mt-4">
+    <div class="col"-></div>
+    <div class="col-6"></div>
 
-    <label for="exampleInputEmail1" class="form-label">Apellido paterno:</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <?php foreach ($administrador as $key): ?>
 
-    <label for="exampleInputEmail1" class="form-label">Apellido materno:</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <form>
+      <label class="form-label">Nombre: </label>
+      <td><?=$key->nombre?></td><br>
+      
+    <label class="form-label">Apellido paterno:</label>
+    <td><?=$key->apellido_paterno?></td><br>
 
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <label class="form-label">Apellido materno:</label>
+    <td><?=$key->apellido_materno?></td><br>
 
-    <label for="exampleInputEmail1" class="form-label">Celular</label>
-    <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <label class="form-label">Email: </label>
+    <td><?=$key->correo?></td><br>
 
-    <label for="exampleInputEmail1" class="form-label">Nacionanlidad</label><br>
-    <select class="form-select" aria-label="Default select example">
-    <option selected> </option>
-    </select>
+    <label class="form-label">Celular: </label>
+    <td><?=$key->celular?></td><br>
+    
+    <label class="form-label">Telefono Fijo: </label>
+    <td><?=$key->telefono_fijo?></td><br>
 
-    <label for="exampleInputEmail1" class="form-label">Sexo</label><br>
-    <select class="form-select" aria-label="Default select example">
-    <option selected> </option>
-    </select>
-
-    <label for="exampleInputEmail1" class="form-label">Fecha de nacimiento</label><br>
-    <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-
-
-
-
+    <label class="form-label">Nacionanlidad: </label>
+    <td><?=$key->nacionalidad?></td><br>
    
-</from>
-</div>
+    <label class="form-label">Sexo: </label>
+    <td><?=$key->sexo?></td><br>
 
+    <label class="form-label">Fecha de nacimiento: </label>
+    <td><?=$key->fecha_nacimiento?></td><br>
+
+
+      </form>
+
+      <td><a class="btn btn-danger" href="<?=base_url
+      ('index.php/AdmcuentaC/ModCuenta')?>"
+      > Editar </a></td>
+    
+        <?php endforeach ?>
+
+
+
+
+
+
+        <!--
+
+  <div class="container">
+  <div class="row mt-4">
+    <div class="col"-></div>
+    <div class="col-6"></div>
+
+<form>
+<label class="form-label">Nombre</label>
+<input type="text" class="form-control" id="Nombreadm1" data-bs-toggle="$key->nombre?" name='nombre'>
+
+<label class="form-label">Apellido paterno:</label>
+<input type="text" class="form-control" id="Apellidopatadm1" aria-describedby="emailHelp">
+
+<label class="form-label">Apellido materno:</label>
+<input type="text" class="form-control" id="Apellidomatadm1" aria-describedby="emailHelp">
+
+<label class="form-label">Email</label>
+<input type="email" class="form-control" id="Emailladm1" aria-describedby="emailHelp">
+
+<label class="form-label">Celular</label>
+<input type="tel" class="form-control" id="CelularAdm1" aria-describedby="emailHelp">
+
+<label class="form-label">Telefono fijo</label>
+<input type="tel" class="form-control" id="Telefonofijo1" aria-describedby="emailHelp">
+
+<label class="form-label">Nacionanlidad</label>
+<input type="text" class="form-control" id="Nacionalidad1" aria-describedby="emailHelp">
+
+<label class="form-label">Sexo</label>
+<input type="text" class="form-control" id="Sexo1" aria-describedby="emailHelp">
+
+<label class="form-label">Fecha de nacimiento</label><br>
+<input type="text" class="form-control" id="Fechanacimiento1" aria-describedby="emailHelp">
+</form>
+     
+
+<?php foreach ($administrador as $key): ?>
+          <?=$key->nombre?>
+          <?=$key->apellido_paterno?>
+          <?=$key->apellido_materno?>
+          <?=$key->correo?>
+          <?=$key->contrasenia?>
+          <?=$key->nacionalidad?>
+          <?=$key->sexo?>
+          <?=$key->fecha_nacimiento?>
+          <?=$key->celular?>
+          <?=$key->telefono_fijo?>
+          <?php endforeach ?>
+
+
+
+         -->
+
+          
+     
+
+
+    
+    <div class="col"></div>
+  </div>
+</div>
 
 
 
