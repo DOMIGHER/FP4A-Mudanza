@@ -11,46 +11,53 @@
 
 <div class="card text-center">
   <div class="card-body">
-
     <h4>Administra cuenta</h3>
   </div>
 </div>
 
-<div class="position-absolute top-50 start-50 translate-middle">
-<from>
+<div class="container">
+<div class="row mt-4">
+<div class="col"-></div>
+<div class="col-6"></div>
+
+  <form action="<? ?>" method="POST">
 
     <label for="exampleInputEmail1" class="form-label">Nombre</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control" name="nombre"  value="<?=$administrador[0]->nombre?>">
 
     <label for="exampleInputEmail1" class="form-label">Apellido paterno:</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control" name="apellido_paterno"  value="<?=$administrador[0]->apellido_paterno?>">
 
     <label for="exampleInputEmail1" class="form-label">Apellido materno:</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control" name="apellido_materno"  value="<?=$administrador[0]->apellido_materno?>">
 
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <label for="exampleInputEmail1" class="form-label">Email</label>
+    <input type="email" class="form-control" name="correo"  value="<?=$administrador[0]->correo?>">
 
     <label for="exampleInputEmail1" class="form-label">Celular</label>
-    <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="tel" class="form-control" name="celular"  value="<?=$administrador[0]->celular?>">
+
+    <label class="form-label">Telefono Fijo: </label>
+    <input type="tel" class="form-control" name="telefono_fijo"  value="<?=$administrador[0]->telefono_fijo?>">
 
     <label for="exampleInputEmail1" class="form-label">Nacionanlidad</label><br>
-    <select class="form-select" aria-label="Default select example">
+    <select class="form-select" name="nacionalidad" value="<?=$administrador[0]->nacionalidad?>">
     <option selected> </option>
     </select>
 
     <label for="exampleInputEmail1" class="form-label">Sexo</label><br>
-    <select class="form-select" aria-label="Default select example">
+    <select class="form-select" name="sexo" value="<?=$administrador[0]->sexo?>">
     <option selected> </option>
     </select>
 
     <label for="exampleInputEmail1" class="form-label">Fecha de nacimiento</label><br>
-    <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="date" class="form-control" name="fecha_nacimiento"  value="<?=$administrador[0]->fecha_nacimiento?>">
 
+    </form>
 
-
-
-
-   
-</from>
 </div>
+</div>
+
+
+</body>
+</html>
