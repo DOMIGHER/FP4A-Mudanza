@@ -47,4 +47,24 @@ class AdmEm extends CI_Controller
             redirect(base_url('index.php/AdmEm/show'), 'refresh');
         }
     }
+
+
+    public function EditarE($Idempleado) {
+        $this->load->model('AdmEmC');
+        $data['deta'] = $this->AdmEmC->getDato($Idempleado);
+        $this->load->helper(array('form', 'url'));
+
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('nombre', 'nombre', 'required');
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view('encabezados/head.php');
+            $this->load->view('encabezados/menu.php');
+            $this->load->view('Administrar/EditarE',$data);
+            $this->load->view('encabezados/footer.php');
+        } else {
+            $this->AdmEmC->EditarE($Idempleado);
+            redirect(base_url('index.php/AdmEm/show'), 'refresh');
+        }
+    }
 }

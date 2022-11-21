@@ -24,6 +24,7 @@
                 <td><?=$key->clase_vehiculo?></td>
 
                 <td><a class="btn btn-success" href="<?=base_url('index.php/AdmCam/detalleC/').$key->idcamioneta?>">Detalles</a></td>
+                <td><a class="btn btn-warning" href="<?=base_url('index.php/AdmCam/EditarC/').$key->idcamioneta?>">Editar</a></td>
                 <td><a class="btn btn-danger" href="<?=base_url('index.php/AdmCam/borrarC/').$key->idcamioneta?>">Borrar</a></td>
             </tr>
         <?php endforeach ?>

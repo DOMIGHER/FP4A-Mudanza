@@ -29,4 +29,17 @@ class AdmCamC extends CI_Model
     );
     $this->db->insert('camioneta', $data);
     }
+
+    function EditarC($Idcamioneta){
+        $data = array(
+            'idcamioneta' => $this->input->post('idcamioneta'),
+            'modelo' => $this->input->post('modelo'),
+            'fecha_compra' => $this->input->post('fecha_compra'),
+            'peso_carga' => $this->input->post('peso_carga'),
+            'pais_de_origen' => $this->input->post('pais_de_origen'),
+            'clase_vehiculo' => $this->input->post('clase_vehiculo')
+    );
+    $this->db->where('Idcamioneta', $Idcamioneta);
+    $this->db->update('camioneta', $data);
+    }
 } ?>

@@ -34,11 +34,12 @@
                 <td><?=$key->fecha_nacimiento?></td>
                 <td><?=$key->num_licencia?></td>
                 <td><?=$key->rfc?></td>
-                <td><?=$key->antecedentes_penales?></td>
+                <td><?=$key->antecedentes_penales?></td>    
                 <td><?=$key->telefono_fijo?></td>
                 <td><?=$key->celular?></td>
 
                 <td><a class="btn btn-success" href="<?=base_url('index.php/AdmEm/detalle/').$key->idempleado?>">Detalles</a></td>
+                <td><a class="btn btn-warning" href="<?=base_url('index.php/AdmEm/EditarE/').$key->idempleado?>">Editar</a></td>
                 <td><a class="btn btn-danger" href="<?=base_url('index.php/AdmEm/borrarE/').$key->idempleado?>">Borrar</a></td>
             </tr>
         <?php endforeach ?>

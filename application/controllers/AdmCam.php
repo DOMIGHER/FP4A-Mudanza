@@ -48,4 +48,23 @@ class AdmCam extends CI_Controller
             redirect(base_url('index.php/AdmCam/show'), 'refresh');
         }
     }
+
+    public function EditarC($Idcamioneta) {
+        $this->load->model('AdmCamC');
+        $data['camionetaD'] = $this->AdmCamC->getDato($Idcamioneta);
+        $this->load->helper(array('form', 'url'));
+
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('modelo', 'modelo', 'required');
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view('encabezados/head.php');
+            $this->load->view('encabezados/menu.php');
+            $this->load->view('AdmCam/EditarC',$data);
+            $this->load->view('encabezados/footer.php');
+        } else {
+            $this->AdmCamC->EditarC($Idcamioneta);
+            redirect(base_url('index.php/AdmCam/show'), 'refresh');
+        }
+    }
 }
