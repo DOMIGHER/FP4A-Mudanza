@@ -32,6 +32,15 @@
 
 <p  class="contenedor" > <?=$key->descripcion?> </p>
 
+<div class="card text-center">
+<td><a class="btn btn-danger" href="<?=base_url
+      ('index.php/AdmInfoempresaC/modinformacionempresa')?>"
+      > Editar informacion </a></td>
+
+</div>
+
+
+
 <?php endforeach ?>
     
 </body>
