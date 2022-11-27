@@ -151,10 +151,12 @@ ul li a:hover
         </h3>
       </div>
   
+      
+
 <h1 align= "center"> ¿Esta seguro de que desea eliminar su cuenta? <h1>
 
 <div class="d-grid gap-2 col-6 mx-auto  align-items-center vh-100">
-<a style="background-color:black; color:white; margin-top:20px;" class="btn btn-dark" type="button" href="<?=base_url('index.php/Usuario/login/')?>">
+<a style="background-color:black; color:white; margin-top:20px;" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_usu/login/')?>">
     Eliminar cuenta
 </a>
 <div>
