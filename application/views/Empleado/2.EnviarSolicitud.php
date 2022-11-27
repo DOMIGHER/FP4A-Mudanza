@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title> ::Enviar solicitud:: </title>
+    <title> Enviar solicitud </title>
     <style type="text/css">
 
 h1
@@ -80,7 +80,7 @@ h6
     input[type="checkbox"]
 {
     position: fixed;
-    right: 1270px;
+    right: 1170px;
     top: 20px;
     width: 50px;
     height: 50px;
@@ -91,7 +91,7 @@ h6
 .icon
 {
     position: fixed;
-    right: 1270px;
+    right: 1170px;
     top:10px;
     width: 50px;
     height: 50px;
@@ -128,7 +128,7 @@ ul
     margin-bottom: 100px;
     padding: 0;
     box-sizing: border-box;
-    width: 600px;
+    width: 300px;
     height: 100vh;
     background: #A6C8AF;
     transition: 0.5s;
@@ -183,12 +183,11 @@ ul li a:hover
         <input type="checkbox" name="">
         <span class="icon"></span>
             <ul><br>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/ModificarCuentaC/show/')?>">Administrar cuenta</a></li><br>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarSolicitudC/show/')?>">Administrar solicitud</a></li>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarReporteC/show/')?>">Administrar reporte</a></li><br>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/InformacionEmpresaC/show/')?>">Informacion de la empresa</a></li>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Usuario/login/')?>">Cerrar sesion</a></li>
-            </ul>
+            <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_cuenta/show/')?>">Administrar cuenta</a></li><br>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_Soli/show/')?>">Administrar solicitud</a></li>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_Repor/show/')?>">Administrar reporte</a></li><br>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_InfoE/show/')?>">Informacion de la empresa</a></li>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_usu/login/')?>">Cerrar sesion</a></li>
         </h1>
       </div>
 
@@ -589,7 +588,7 @@ ul li a:hover
     <div class="row">
         <div class="col-6">
             <div class="mb-3">
-                <a style="background-color:rgb(243, 220, 224); color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarSolicitudC/show/')?>">
+                <a style="background-color:rgb(243, 220, 224); color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_Soli/show/')?>">
                      Enviar solicitud
                  </a>
              </div>
@@ -597,7 +596,7 @@ ul li a:hover
 
         <div class="col-6">
              <div class="mb-3">
-            <a style="background-color:rgb(243, 220, 224); color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/EnviarSolicitudC/EnviarSolicitud/')?>">
+            <a style="background-color:rgb(243, 220, 224); color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_SoliEn/EnviarSolicitud/')?>">
                      Cancelar
                 </a>
              </div>
