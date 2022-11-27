@@ -2,40 +2,36 @@
 
 class AdmcuentaC extends CI_Controller{
 
-    public function verCuenta(){
+    public function showcuenta(){
         $this->load->model('AdmCuentaM');
-        $data['administrador'] = $this->AdmCuentaM->getCuenta();
+        $data['administrador'] = $this->AdmCuentaM->getcuenta();
 
-        $this->load->view('AdmCuenta/AdmvercuentaV.php', $data);
-
+        $this->load->view('AdmCuenta/AdmvercuentaV.php',$data);
 
     }
 
-    public function ModCuenta($idadministrador){
+
+    public function updatecuenta($idadministrador){
+        
         $this->load->model('AdmCuentaM');
-        $data['administrador'] = $this->AdmCuentaM->modificaCuenta($idadministrador);
 
-        $this->load->helper(array('from','url'));
+        $data['administrador'] = $this->AdmCuentaM->detallecuenta($idadministrador);
 
-        $this->load->library('from_validation');
-        if ($this->form_validation->run() == FALSE) {
-            
-            $this->load->view('AdmCuenta/AdmmodcuentaV.php', $data);
+        $this->load->helper(array('form', 'url'));
+
+        $this->load->library('form_validation');
+
+        if($this->form_validation->run() == FALSE){
+
+            $this->load->view('AdmCuenta/updatecuentaV.php',$data);
 
         }else {
-
-            $this->AdmCuentaM->modificaCuenta();
-            redirect(base_url('index.php/AdmcuentaC/verCuenta'),'refresh');
-            
+            $this->AdmCuentaM->updatecuent($idadministrador);
+            redirect(base_url('index.php/AdmcuentaC/showcuenta'),'refresh');
+             
         }
-
-
-        
-        
     }
 
 
 
-
-}
-?>
+}?>

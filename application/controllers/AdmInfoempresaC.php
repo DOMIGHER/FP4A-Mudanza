@@ -11,30 +11,31 @@ class AdmInfoempresaC extends CI_Controller{
 
     }
 
-    public function modinformacionempresa($Idinfoempresa){
-        $this->load->model('AdminfempresaM');
-        $data['infoempresa'] = $this->AdminfempresaM->getinfcuentas($Idinfoempresa);
+    public function updateCuenta($idadministrador){
+        
+        $this->load->model('AdmCuentaM');
+
+        $data['admimistrador'] = $this->AdmCuentaM->verinformacionempresa($idadministrador);
+
         $this->load->helper(array('form', 'url'));
 
         $this->load->library('form_validation');
+        
 
-        if ($this->form_validation->run() == FALSE) {
-            
-            $this->load->view('Adminfempresa/AdmeditinfempresaV.php',$data);
-            
+        if($this->form_validation->run() == FALSE){
 
-        } else {
-            $this->modinformacionempresaM->modinformacionempresa($Idinfoempresa);
-            redirect(base_url('index.php/AdmInfoempresaC/verinformacionempresa'), 'refresh');
+            $this->load->view('AdmCuenta/AdmmodcuentaV',$data);
+
+        }else {
+            $this->AdmCuentaM->updateProducto ($idadministrador);
+            redirect(base_url('index.php/AdmInfoempresaC/verinformacionempresa'),'refresh');
+             
         }
+    }
 
 
     }
 
     
 
-    
-
-
-}
 ?>
