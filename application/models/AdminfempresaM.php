@@ -8,15 +8,14 @@ class AdminfempresaM extends CI_Model{
 
     }
 
-    function getinfcuentas($Idinfoempresa){
-        $this->db->where('$Idinfoempresa',$Idinfoempresa);
+    function detallinfocuenta($Idinfoempresa){
+        $this->db->where('Idinfoempresa',$Idinfoempresa);
         $query = $this->db->get('infoempresa');
         return $query->result();
-    }
+        }
 
     public function modinformacionempresaM($Idinfoempresa){
         $data = array(
-            'idinfoempresa' => $this->input->post('idinfoempresa'),
             'descripcion' => $this->input->post('descripcion')
         );
     $this->db->where('Idinfoempresa', $Idinfoempresa);

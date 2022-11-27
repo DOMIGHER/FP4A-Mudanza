@@ -31,13 +31,10 @@
 <?php foreach ($infoempresa as $key): ?>
 
 <p  class="contenedor" > <?=$key->descripcion?> </p>
-
 <div class="card text-center">
-<td><a class="btn btn-danger" href="<?=base_url
-      ('index.php/AdmInfoempresaC/modinformacionempresa')?>"
-      > Editar informacion </a></td>
-
 </div>
+
+<a class="btn btn-primary btn-lg" href="<?=base_url('index.php/AdmInfoempresaC/updateinfoempresas/').$key->Idinfoempresa?>">Editar informacion</a>
 
 
 
