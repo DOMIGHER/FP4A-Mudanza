@@ -5,10 +5,7 @@ class AdmCam extends CI_Controller
     {
         $this->load->model('AdmCamC');
         $data['camioneta'] = $this->AdmCamC->getDatos();
-        $this->load->view('encabezados/head.php');
-        $this->load->view('encabezados/menu.php');
         $this->load->view('AdmCam/AdminCamV.php', $data);
-        $this->load->view('encabezados/footer.php');
     }
 
     public function detalleC($Idcamioneta)
@@ -16,10 +13,7 @@ class AdmCam extends CI_Controller
         $this->load->model('AdmCamC');
         $data['camionetaD'] = $this->AdmCamC->getDato($Idcamioneta);
 
-        $this->load->view('encabezados/head.php');
-        $this->load->view('encabezados/menu.php');
         $this->load->view('AdmCam/DetallesC.php', $data);
-        $this->load->view('encabezados/footer.php');
     }
 
     public function borrarC($Idcamioneta)
@@ -39,10 +33,7 @@ class AdmCam extends CI_Controller
         $this->form_validation->set_rules('modelo', 'modelo', 'required');
 
         if ($this->form_validation->run() == FALSE) {
-            $this->load->view('encabezados/head.php');
-            $this->load->view('encabezados/menu.php');
             $this->load->view('AdmCam/insertC');
-            $this->load->view('encabezados/footer.php');
         } else {
             $this->AdmCamC->insertC();
             redirect(base_url('index.php/AdmCam/show'), 'refresh');
@@ -58,10 +49,7 @@ class AdmCam extends CI_Controller
         $this->form_validation->set_rules('modelo', 'modelo', 'required');
 
         if ($this->form_validation->run() == FALSE) {
-            $this->load->view('encabezados/head.php');
-            $this->load->view('encabezados/menu.php');
             $this->load->view('AdmCam/EditarC',$data);
-            $this->load->view('encabezados/footer.php');
         } else {
             $this->AdmCamC->EditarC($Idcamioneta);
             redirect(base_url('index.php/AdmCam/show'), 'refresh');
