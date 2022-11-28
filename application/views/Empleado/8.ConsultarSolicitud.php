@@ -5,31 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title> ::Enviar solicitud:: </title>
+    <title> Enviar solicitud </title>
     <style type="text/css">
 
 h1
 {
-  margin-top: 100px;
-  padding:0;
-  font-family: Segoe UI;
-  overflow-x: hidden;
+background: white;
+color: red;
+border: 1px solid #000;
+margin-top: 50px;
+margin-right: 100px;
+margin-left: 100px;
+margin-bottom: 0px;
+padding: 20px 10px 20px 25px;
 
 }
 
 h2
-{
-  background: white;
-  color: red;
-  border: 1px solid #000;
-  margin-top: -50px;
-  margin-right: 100px;
-  margin-left: 100px;
-  margin-bottom: 0px;
-  padding: 60px 30px 40px 45px;
-}
-
-h3
 {
   background: white;
   color: red;
@@ -41,10 +33,11 @@ h3
   padding: 60px 30px 40px 45px;
 }
 
+
 h4
 {
   background: white;
-  color: red;
+  color: black;
   border: 1px solid #000;
   margin-top: 0px;
   margin-right: 100px;
@@ -77,10 +70,18 @@ h6
       padding: 60px 30px 40px 45px;
     }
 
-    input[type="checkbox"]
+    h3
+{
+  margin-top: 100px;
+  padding:0;
+  font-family: "Segoe UI";
+  overflow-x: hidden;
+}
+
+input[type="checkbox"]
 {
     position: fixed;
-    right: 1270px;
+    right: 1170px;
     top: 20px;
     width: 50px;
     height: 50px;
@@ -91,7 +92,7 @@ h6
 .icon
 {
     position: fixed;
-    right: 1270px;
+    right: 1170px;
     top:10px;
     width: 50px;
     height: 50px;
@@ -128,7 +129,7 @@ ul
     margin-bottom: 100px;
     padding: 0;
     box-sizing: border-box;
-    width: 600px;
+    width: 300px;
     height: 100vh;
     background: #A6C8AF;
     transition: 0.5s;
@@ -173,40 +174,41 @@ ul li a:hover
   <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
       <div class="container" style="text-align:center;">
-      <p align="center"><FONT FACE="Segoe UI" FONT SIZE="6"> Administra Solicitud </FONT></p>  
+            <p align="center"><FONT FACE="Segoe UI" SIZE="6"> Administra solicitud </FONT></p>  
       </div>
     </div>
   </nav>
 
   <div>
-        <h1>
-        <input type="checkbox" name="">
-        <span class="icon"></span>
+        <h3>
+          <input type="checkbox" name="">
+          <span class="icon"></span>
             <ul><br>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/ModificarCuentaC/show/')?>">Administrar cuenta</a></li><br>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarSolicitudC/show/')?>">Administrar solicitud</a></li>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarReporteC/show/')?>">Administrar reporte</a></li><br>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/InformacionEmpresaC/show/')?>">Informacion de la empresa</a></li>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Usuario/login/')?>">Cerrar sesion</a></li>
-            </ul>
-        </h1>
-      </div>
+            <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_cuenta/show/')?>">Administrar cuenta</a></li><br>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_Soli/show/')?>">Administrar solicitud</a></li>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_Repor/show/')?>">Administrar reporte</a></li><br>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_InfoE/show/')?>">Informacion de la empresa</a></li>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_usu/login/')?>">Cerrar sesion</a></li>
+        </h3>
+    </div>
 
-  <div>
-    <h2>
+
+  <div style=" margin-top: -120px; ">
+    <h1>
       <p color="red" align="center"><FONT FACE="Segoe UI" SIZE="3"> Solicitud de mudanza 01 
         <div align="right">
           <div class="col-4">
             <div class="mb-3">
                 <label class="form-label">Fecha de registro: </label>
-                    <input type="date" class="form-control" style="width : 200px; heigth : 200px">
+                    <input type="date" value="2022-11-25" readonly=»readonly» class="form-control" style="width : 200px; heigth : 200px">
               </div>
           </div>
         </div>
         </FONT>
       </p>
-    </h2>
+    </h1>
   </div> 
+
 
 <div>
 <h2>
@@ -220,87 +222,82 @@ ul li a:hover
           <div class="col-4">
               <div class="mb-3">
                    <label class="form-label"><FONT FACE="Segoe UI" SIZE="3"> Nombre(s): </FONT></label>
-                   <input type="text" class="form-control">
+                   <input type="text" placeholder="Aldo Alfredo" readonly=»readonly»  class="form-control">
               </div>
           </div>
 
           <div class="col-4">
                 <div class="mb-3">
                     <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Apellido Paterno: </FONT> </label>
-                    <input type="text" class="form-control">
+                    <input type="text" placeholder="González" readonly=»readonly» class="form-control">
                 </div>
           </div>
 
           <div class="col-4">
                 <div class="mb-3">
                     <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Apellido Materno:  </FONT> </label>
-                    <input type="text" class="form-control">
+                    <input type="text"  placeholder="Amaro" readonly=»readonly»  class="form-control">
                 </div>
           </div>
 
           <div class="col-4">
                 <div class="mb-3">
                     <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Correo:  </FONT> </label>
-                    <input type="text" class="form-control">
+                    <input type="text" placeholder="Ald003dke@gmail.com" readonly=»readonly» class="form-control">
                 </div>
           </div>
 
           <div class="col-4">
                 <div class="mb-3">
                     <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Celular: </FONT> </label>
-                    <input type="text" class="form-control">
+                    <input type="text" placeholder="231-150-2758" readonly=»readonly» class="form-control">
                </div>
           </div>
 
-          
           <div class="col-4">
               <div class="mb-3">
                   <label  class="form-kabel"> <FONT FACE="Segoe UI" SIZE="3"> Nacionalidad: </FONT> </label>
-                   <select name="Nacionalidad" id="Nacionalidad">
+                   <select name="Nacionalidad" id="Nacionalidad" disabled>
                       <option value="M"> Mexicana  </option>
-                      <option value="E">Europea</option>
-                      <option value="C">Estadounidense</option>
-                      <option value="O">Otro</option>
                   </select>
               </div>
           </div>
-        
 
           <div class="col-4">
               <div class="mb-3">
                   <label style="width : 100px; heigth : 100px" class="form-kabel"> <FONT FACE="Segoe UI" SIZE="3"> Sexo: </FONT> </label>
-                   <select name="Sexo" id="Sexo">
+                   <select name="Sexo" readonly=»readonly» id="Sexo" disabled>
                       <option value="M"> Masculino  </option>
-                      <option value="F"> Femenino </option>
+                      <option value="F"> Femenino</option>
                   </select>
               </div>
           </div>
 
           <div class="col-4">
               <div class="mb-3">
-                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Telefono fijo: </FONT> </label>
-                   <input type="text" class="form-control">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Télefono fijo: </FONT> </label>
+                   <input type="text" placeholder="231-313-3638" readonly=»readonly»  class="form-control">
                </div>
           </div>
 
           <div class="col-4">
               <div class="mb-3">
                   <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Edad: </FONT> </label>
-                  <input type="Number" class="form-control">
+                  <input type="Number" value="21" readonly=»readonly»  class="form-control">
               </div>
           </div>
 
           <div class="col-4">
               <div class="mb-3">
                   <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Curp: </FONT> </label>
-                  <input type="text" class="form-control">
+                  <input type="text" placeholder="GOAA011003HPLNMLA5" readonly=»readonly»  class="form-control">
               </div>
           </div>
 
           <div class="col-4">
               <div class="mb-3">
                   <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Fecha de nacimiento: </FONT> </label>
-                  <input type="date" class="form-control">
+                  <input type="date" value="2001-10-03" readonly=»readonly»  class="form-control">
               </div>
           </div>
         </h2>
@@ -310,7 +307,7 @@ ul li a:hover
 
 
 <div>
-<h3>
+<h2>
   
 <p color="red" align="center"><FONT FACE="Segoe UI" SIZE="3"> Dirección origen </FONT></p> <br>
 
@@ -318,54 +315,54 @@ ul li a:hover
     <form>
       <div class="row">
 
-      <div class="col-4">
-                <div class="mb-3">
-                    <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Pais: </FONT> </label>
-                    <input type="text" class="form-control">
-                </div>
+            <div class="col-4">
+              <div class="mb-3">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Pais: </FONT> </label>
+                  <input type="text" placeholder="México"  readonly=»readonly»  class="form-control">
+              </div>
           </div>
      
           <div class="col-4">
               <div class="mb-3">
                    <label class="form-label"><FONT FACE="Segoe UI" SIZE="3"> Estado: </FONT></label>
-                   <input type="text" class="form-control">
+                   <input type="text" placeholder="Puebla" readonly=»readonly»  class="form-control">
               </div>
           </div>
 
           <div class="col-4">
                 <div class="mb-3">
                     <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Ciudad: </FONT> </label>
-                    <input type="text" class="form-control">
+                    <input type="text" placeholder="Teziutlán" readonly=»readonly»  class="form-control">
                 </div>
           </div>
 
           <div class="col-4">
                 <div class="mb-3">
                     <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Colonia:  </FONT> </label>
-                    <input type="text" class="form-control">
+                    <input type="text" placeholder="Xoloco" readonly=»readonly»  class="form-control">
                 </div>
           </div>
 
           <div class="col-4">
                 <div class="mb-3">
                     <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> CP:  </FONT> </label>
-                    <input type="Number" class="form-control">
+                    <input type="Number"  value=73870 readonly=»readonly»  class="form-control">
                 </div>
           </div>
 
           <div class="col-4">
                 <div class="mb-3">
                     <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Calle: </FONT> </label>
-                    <input type="text" class="form-control">
+                    <input type="text" placeholder="Hermemegildo Galeana" readonly=»readonly»  class="form-control">
                </div>
           </div>
 
           <div class="col-4">
               <div class="mb-3">
                   <label style="width : 100px; heigth : 100px" class="form-kabel"> <FONT FACE="Segoe UI" SIZE="3"> Sexo: </FONT> </label>
-                   <select name="Sexo" id="Sexo">
+                   <select name="Sexo" readonly=»readonly» id="Sexo" disabled>
                       <option value="M"> Masculino  </option>
-                      <option value="F"> Femenino </option>
+                      <option value="F"> Femenino</option>
                   </select>
               </div>
           </div>
@@ -373,21 +370,21 @@ ul li a:hover
           <div class="col-4">
               <div class="mb-3">
                   <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> No. Exterior: </FONT> </label>
-                   <input type="text" class="form-control">
+                   <input type="text"  placeholder="36-A"   readonly=»readonly»  class="form-control">
                </div>
           </div>
 
           <div class="col-4">
               <div class="mb-3">
                   <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> No. Interior: </FONT> </label>
-                  <input type="text" class="form-control">
+                  <input type="text" placeholder="S/N"  readonly=»readonly»  class="form-control">
               </div>
           </div>
 
           <div class="col-4">
               <div class="mb-3">
                   <label style="width : 100px; heigth : 100px" class="form-kabel"> <FONT FACE="Segoe UI" SIZE="3"> Tipo de acceso: </FONT> </label>
-                   <select name="Acceso" id="Acceso">
+                   <select name="Acceso" id="Acceso" disabled>
                       <option value="E"> Estrecho  </option>
                       <option value="A"> Amplio </option>
                       <option value="R"> Restringido </option>
@@ -399,8 +396,7 @@ ul li a:hover
           <div class="col-4">
               <div class="mb-3">
                   <label style="width : 100px; heigth : 100px" class="form-kabel"> <FONT FACE="Segoe UI" SIZE="3"> Tipo de vivienda: </FONT> </label>
-                   <select name="Vivienda" id="Vivienda">
-                      <option value="C"> Casa propia  </option>
+                   <select name="Vivienda" id="Vivienda" disabled>
                       <option value="D"> Departamento </option>
                       <option value="V"> Vecindad </option>
                       <option value="O">Otro </option>
@@ -411,23 +407,23 @@ ul li a:hover
           <div class="col-4">
               <div class="mb-3">
                   <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Fecha de mudanza: </FONT> </label>
-                  <input type="date" class="form-control">
+                  <input  type="date" value="2022-11-19" readonly=»readonly» class="form-control">
               </div>
           </div>
 
           <div class="col-4">
               <div class="mb-3">
                   <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Hora de salida: </FONT> </label>
-                  <input type="time" class="form-control">
+                  <input type="time" value="15:00" readonly=»readonly» class="form-control">
               </div>
           </div>
-        </h3>
+        </h1>
       </div>
     </div>
   </div>
 
 <div>
-<h4>
+<h2>
   
 <p color="red" align="center"><FONT FACE="Segoe UI" SIZE="3"> Dirección destino </FONT></p> <br>
 
@@ -438,51 +434,51 @@ ul li a:hover
       <div class="col-4">
               <div class="mb-3">
                   <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Pais: </FONT> </label>
-                  <input type="text" class="form-control">
+                  <input type="text" placeholder="México" readonly=»readonly» class="form-control">
               </div>
           </div>
      
           <div class="col-4">
               <div class="mb-3">
                    <label class="form-label"><FONT FACE="Segoe UI" SIZE="3"> Estado: </FONT></label>
-                   <input type="text" class="form-control">
+                   <input type="text" placeholder="Puebla" readonly=»readonly»  class="form-control">
               </div>
           </div>
 
           <div class="col-4">
                 <div class="mb-3">
                     <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Ciudad: </FONT> </label>
-                    <input type="text" class="form-control">
+                    <input type="text" placeholder="Teziutlán" readonly=»readonly» class="form-control">
                 </div>
           </div>
 
           <div class="col-4">
                 <div class="mb-3">
                     <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Colonia:  </FONT> </label>
-                    <input type="text" class="form-control">
+                    <input type="text"  placeholder="La Garita"  readonly=»readonly»  class="form-control">
                 </div>
           </div>
 
           <div class="col-4">
                 <div class="mb-3">
                     <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> CP:  </FONT> </label>
-                    <input type="Number" class="form-control">
+                    <input type="Number"  placeholder="73890"  readonly=»readonly»  class="form-control">
                 </div>
           </div>
 
           <div class="col-4">
                 <div class="mb-3">
                     <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Calle: </FONT> </label>
-                    <input type="text" class="form-control">
+                    <input type="text" placeholder="Hidalgo"  readonly=»readonly»  class="form-control">
                </div>
           </div>
 
           <div class="col-4">
               <div class="mb-3">
                   <label style="width : 100px; heigth : 100px" class="form-kabel"> <FONT FACE="Segoe UI" SIZE="3"> Sexo: </FONT> </label>
-                   <select name="Sexo" id="Sexo">
+                   <select name="Sexo" readonly=»readonly» id="Sexo" disabled>
                       <option value="M"> Masculino  </option>
-                      <option value="F"> Femenino </option>
+                      <option value="F"> Femenino</option>
                   </select>
               </div>
           </div>
@@ -490,21 +486,21 @@ ul li a:hover
           <div class="col-4">
               <div class="mb-3">
                   <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> No. Exterior: </FONT> </label>
-                   <input type="text" class="form-control">
+                   <input type="Number" placeholder="64" readonly=»readonly»  class="form-control">
                </div>
           </div>
 
           <div class="col-4">
               <div class="mb-3">
                   <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> No. Interior: </FONT> </label>
-                  <input type="text" class="form-control">
+                  <input type="Number"  placeholder="S/N" readonly=»readonly»  class="form-control">
               </div>
           </div>
 
           <div class="col-4">
               <div class="mb-3">
                   <label style="width : 100px; heigth : 100px" class="form-kabel"> <FONT FACE="Segoe UI" SIZE="3"> Tipo de acceso: </FONT> </label>
-                   <select name="Acceso" id="Acceso">
+                   <select name="Acceso" id="Acceso" disabled>
                       <option value="E"> Estrecho  </option>
                       <option value="A"> Amplio </option>
                       <option value="R"> Restringido </option>
@@ -516,7 +512,7 @@ ul li a:hover
           <div class="col-4">
               <div class="mb-3">
                   <label style="width : 100px; heigth : 100px" class="form-kabel"> <FONT FACE="Segoe UI" SIZE="3"> Tipo de vivienda: </FONT> </label>
-                   <select name="Vivienda" id="Vivienda">
+                   <select name="Vivienda" id="Vivienda" disabled>
                       <option value="C"> Casa propia  </option>
                       <option value="D"> Departamento </option>
                       <option value="V"> Vecindad </option>
@@ -528,17 +524,17 @@ ul li a:hover
           <div class="col-4">
               <div class="mb-3">
                   <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Fecha de mudanza: </FONT> </label>
-                  <input type="date" class="form-control">
+                  <input type="date" value="2022-11-19" readonly=»readonly»  class="form-control">
               </div>
           </div>
 
           <div class="col-4">
               <div class="mb-3">
-                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Hora de llegada: </FONT> </label>
-                  <input type="time" class="form-control">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Hora de salida: </FONT> </label>
+                  <input type="time" value="16:30" readonly=»readonly» class="form-control">
               </div>
           </div>
-        </h4>
+        </h5>
       </div>
     </div>
   </div>
@@ -549,13 +545,176 @@ ul li a:hover
       <p color="red" align="center"><FONT FACE="Segoe UI" SIZE="3"> Mudanza </FONT></p> <br>
 
       <div align="center">
-      <a style="background-color:white; color:red; height: 70px; width : 1050px;" class="btn btn-dark" type="button" href="<?=base_url('index.php/EnviarSolicitudC/AgregarHabitaciones/')?>">
+      <a style="background-color:white; color:red; height: 70px; width : 1025px;" class="btn btn-dark" type="button">
           <p style="margin-top: 15px;"> Habitaciones + </p>
       </a> 
       </div> 
 
+      <div>
+        <h6>
+          <p align="center"><FONT FACE="Segoe UI" FONT SIZE="3"> Solicitud 01 </FONT></p>  
+        </h6>
+      </div>
+
+      <div align="right" style= "padding:0px 100px 10px 15px">
+          <a style=" height:35px; background-color:white; color:black ;" class="btn btn-dark" type="button">
+             <p style="margin-top: 0px; color:red"> Editar </p> 
+          </a> 
+      </div>
+
     </h5>
   </div>
+
+  <div>
+        <h4>
+          <p color="black" align="center"><FONT FACE="Segoe UI" SIZE="3"> Datos del empleado </FONT></p> <br>
+
+          <div class="container">
+       <form>
+        <div class="row">
+
+          <div class="col-4">
+              <div class="mb-3">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Nombre(s): </FONT> </label>
+                  <input type="text"  placeholder="Jose" readonly=»readonly»  class="form-control">
+              </div>
+          </div>
+
+          <div class="col-4">
+              <div class="mb-3">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Apellido Paterno: </FONT> </label>
+                  <input align="right"  placeholder="Pérez" type="text" readonly=»readonly» class="form-control" style="padding:0px 100px 10px 15px">
+              </div>
+          </div>
+
+          <div class="col-4">
+              <div class="mb-3">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Apellido Materno: </FONT> </label>
+                  <input align="right" type="text"  placeholder="León" readonly=»readonly» class="form-control" style="padding:0px 100px 10px 15px">
+              </div>
+          </div>
+
+          <div class="col-4">
+              <div class="mb-3">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Celular: </FONT> </label>
+                  <input align="right" type="text"  placeholder="231-366-7981" readonly=»readonly» class="form-control" style="padding:0px 100px 10px 15px">
+              </div>
+          </div>
+
+          <div class="col-4">
+              <div class="mb-3">
+                  <label style="width : 100px; heigth : 100px" class="form-kabel"> <FONT FACE="Segoe UI" SIZE="3"> Sexo: </FONT> </label>
+                   <select name="Sexo" id="Sexo" disabled>
+                      <option value="M"> Masculino </option>
+                      <option value="F"> Femenino </option>
+                      <option value="O">Otro </option>
+                  </select>
+              </div>
+          </div>
+
+          <div class="col-4">
+              <div class="mb-3">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Edad: </FONT> </label>
+                  <input align="right" type="Number" value="41" readonly=»readonly»  class="form-control" style="padding:0px 100px 10px 15px">
+              </div>
+          </div>
+
+          <div class="col-4">
+              <div class="mb-3">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Correo: </FONT> </label>
+                  <input align="right" type="text"  placeholder="JoseLeón@gmail.com" readonly=»readonly» class="form-control" style="padding:0px 100px 10px 15px">
+              </div>
+          </div>
+
+        </div>
+      </div>
+
+      </h4>
+      </div>
+
+      <div>
+      <h4>
+          <p color="black" align="center"><FONT FACE="Segoe UI" SIZE="3"> Datos del administrador </FONT></p> <br>
+
+          <div class="container">
+       <form>
+        <div class="row">
+
+          <div class="col-4">
+              <div class="mb-3">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Nombre(s): </FONT> </label>
+                  <input type="text"  placeholder="Mateo" readonly=»readonly» class="form-control">
+              </div>
+          </div>
+
+          <div class="col-4">
+              <div class="mb-3">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Apellido Paterno: </FONT> </label>
+                  <input align="right" type="text"  placeholder="Aragón"  readonly=»readonly» class="form-control" style="padding:0px 100px 10px 15px">
+              </div>
+          </div>
+
+          <div class="col-4">
+              <div class="mb-3">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Apellido Materno: </FONT> </label>
+                  <input align="right" type="text"  placeholder="Arreola" readonly=»readonly» class="form-control" style="padding:0px 100px 10px 15px">
+              </div>
+          </div>
+
+          <div class="col-4">
+              <div class="mb-3">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Celular: </FONT> </label>
+                  <input align="right" type="text"  placeholder="231-966-7845" readonly=»readonly» class="form-control" style="padding:0px 100px 10px 15px">
+              </div>
+          </div>
+
+          <div class="col-4">
+              <div class="mb-3">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Correo: </FONT> </label>
+                  <input align="right" type="text"  placeholder="FletesyMudanzasSM@outlook.es" readonly=»readonly» class="form-control" style="padding:0px 100px 10px 15px">
+              </div>
+          </div>
+
+        </div>
+      </div>
+
+      </h4>
+      </div>
+
+      <div>
+      <h4>
+          <p color="black" align="center"><FONT FACE="Segoe UI" SIZE="3"> Datos de la camioneta </FONT></p> <br>
+
+          <div class="container">
+       <form>
+        <div class="row">
+
+          <div class="col-4">
+              <div class="mb-3">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Modelo: </FONT> </label>
+                  <input type="text"  placeholder="FORD F-150" readonly=»readonly» class="form-control">
+              </div>
+          </div>
+
+          <div class="col-4">
+              <div class="mb-3">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Peso de la carga: </FONT> </label>
+                  <input align="right" type="text"  placeholder="160Kg" readonly=»readonly» class="form-control" style="padding:0px 100px 10px 15px">
+              </div>
+          </div>
+
+          <div class="col-4">
+              <div class="mb-3">
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Matricula: </FONT> </label>
+                  <input align="right" type="text"  placeholder="KicBtsky0964P" readonly=»readonly» class="form-control" style="padding:0px 100px 10px 15px">
+              </div>
+          </div>
+
+        </div>
+      </div>
+
+      </h4>
+      </div>
 
   <div align="center">
     <h5>
@@ -568,40 +727,31 @@ ul li a:hover
           <div class="col-4">
               <div class="mb-3">
                   <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Costo de estacionamiento: </FONT> </label>
-                  <input type="text" class="form-control">
+                  <input type="text"  placeholder="$50" readonly=»readonly» class="form-control">
               </div>
           </div>
 
           <div class="col-4">
               <div class="mb-3">
                   <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Pago total: </FONT> </label>
-                  <input align="right" type="text" readonly=»readonly»  class="form-control" style="padding:0px 100px 10px 15px">
+                  <input align="right" type="text" placeholder="$560" readonly=»readonly»  class="form-control" style="padding:0px 100px 10px 15px">
               </div>
           </div>
 
         </div>
       </div>
+
     </h5>
   </div>
   
+  
   <div align="center">
     <h5>
-    <div class="row">
-        <div class="col-6">
-            <div class="mb-3">
-                <a style="background-color:rgb(243, 220, 224); color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarSolicitudC/show/')?>">
-                     Enviar solicitud
-                 </a>
-             </div>
-        </div>
-
-        <div class="col-6">
-             <div class="mb-3">
-            <a style="background-color:rgb(243, 220, 224); color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/EnviarSolicitudC/EnviarSolicitud/')?>">
-                     Cancelar
-                </a>
-             </div>
-         </div>
+      <div class="mb-3">
+         <a style=" width : 250px; background-color:rgb(243, 220, 224); color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_consul/regresar/')?>">
+             Regresar
+          </a>
+      </div>
     </h5>
   </div> <br>          
 

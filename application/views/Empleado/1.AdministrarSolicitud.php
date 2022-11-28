@@ -147,23 +147,21 @@ svg
             <h3>
             <input type="checkbox" name="">
             <span class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
-            <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
-            </svg>
+           </svg>
             </span>
             <ul><br>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/ModificarCuentaC/show/')?>">Administrar cuenta</a></li><br>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarSolicitudC/show/')?>">Administrar solicitud</a></li>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarReporteC/show/')?>">Administrar reporte</a></li><br>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/InformacionEmpresaC/show/')?>">Informacion de la empresa</a></li>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Usuario/login/')?>">Cerrar sesion</a></li>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_cuenta/show/')?>">Administrar cuenta</a></li><br>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_Soli/show/')?>">Administrar solicitud</a></li>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_Repor/show/')?>">Administrar reporte</a></li><br>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_InfoE/show/')?>">Informacion de la empresa</a></li>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_usu/login/')?>">Cerrar sesion</a></li>
             </ul>
           </h3>
         </div>    
       
       <div class="d-grid gap-2 col-6 mx-auto  align-items-center vh-100" >
         <a style=" margin-top: -650px; background-color:rgb(243, 220, 224); color:black " 
-          class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarSolicitudC/CrearSolicitud/')?>"><p align="center"><FONT FACE="Segoe UI" FONT SIZE="6"> Crear solicitud </FONT></p>
+          class="btn btn-dark" type="button" href="<?=base_url('index.php/Emp_Soli/CrearSolicitud/')?>"><p align="center"><FONT FACE="Segoe UI" FONT SIZE="6"> Solicitud </FONT></p>
         </a>
       </div><br>
 
