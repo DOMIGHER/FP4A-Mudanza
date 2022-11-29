@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">    
+    
+    a
     <style>
 
 h6
@@ -117,6 +119,7 @@ svg
           <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
       </div>
+
       <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <h6 style="color:black;">  
@@ -133,11 +136,14 @@ svg
            </svg>
             </span>
             <ul><br>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdmCam/show/')?>">Administrar Camioneta</a></li><br>
+            <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdmcuentaC/showcuenta/')?>">Administrar Cuenta</a></li><br>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdmCam/show/')?>">Administrar Camionet</a></li><br>
               <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdmEm/show/')?>">Administrar empleado</a></li>
               </ul>
           </h3>
-        </div>
+        </div> 
+
+        a
 
 <div class="container">
 
