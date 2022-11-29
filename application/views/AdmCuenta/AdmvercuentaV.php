@@ -20,12 +20,14 @@
     <label>Nombre: <?=$key->nombre?> </label><br>
     <label>Apellido paterno: <?=$key->apellido_paterno?> </label><br>
     <label>Apellido materno: <?=$key->apellido_materno?> </label><br>
-    <label>Correo Electronico:: <?=$key->correo?> </label><br>
-    <label>Celular: <?=$key->celular?> </label><br>
-    <label>Pais: <?=$key->nacionalidad?> </label><br>
+    <label>Correo Electronico: <?=$key->correo?> </label><br>
+    <label>Nacionalidad: <?=$key->nacionalidad?> </label><br>
     <label>Sexo: <?=$key->sexo?> </label><br>
     <label>Fecha de nacimiento: <?=$key->fecha_nacimiento?> </label><br>
-    <a class="btn btn-primary btn-lg" href="<?=base_url('index.php/AdmcuentaC/updateCuenta/').$key->idadministrador?>">Editar</a>
+    <label>Telefono fijo: <?=$key->telefono_fijo?> </label><br>
+    <label>Celular: <?=$key->celular?> </label><br>
+    
+    <a class="btn btn-warning" href="<?=base_url('index.php/AdmcuentaC/updateCuenta/').$key->idadministrador?>">Editar</a>
      
      
   

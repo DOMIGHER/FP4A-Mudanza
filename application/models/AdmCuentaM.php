@@ -18,9 +18,14 @@ function detallecuenta($idadministrador){
 
     function updatecuent($idadministrador){
         $data = array(
-            'Nombre' =>$this->input->post('nombre'),
+            'nombre' =>$this->input->post('Nombre'),
             'apellido_paterno' =>$this->input->post('apellido_paterno'),
             'apellido_materno' =>$this->input->post('apellido_materno'),
+            'correo' =>$this->input->post('correo'),
+            'nacionalidad' =>$this->input->post('nacionalidad'),
+            'sexo' =>$this->input->post('sexo'),
+            'fecha_nacimiento' =>$this->input->post('fecha_nacimiento'),
+            'telefono_fijo' =>$this->input->post('telefono_fijo'),
             'celular' =>$this->input->post('celular')
 
         );
