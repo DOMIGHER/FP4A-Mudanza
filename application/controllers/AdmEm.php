@@ -6,6 +6,7 @@ class AdmEm extends CI_Controller
         $this->load->model('AdmEmC');
         $data['informacion'] = $this->AdmEmC->getDatos();
         $this->load->view('Administrar/AdminEmpV.php', $data);
+        $this->load->view('vistamenu/menuV.php');
     }
 
     public function detalle($Idempleado)

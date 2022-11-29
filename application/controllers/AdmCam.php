@@ -6,6 +6,7 @@ class AdmCam extends CI_Controller
         $this->load->model('AdmCamC');
         $data['camioneta'] = $this->AdmCamC->getDatos();
         $this->load->view('AdmCam/AdminCamV.php', $data);
+        $this->load->view('vistamenu/menuV.php');
     }
 
     public function detalleC($Idcamioneta)

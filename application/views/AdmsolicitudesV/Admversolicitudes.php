@@ -8,11 +8,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
-<div class="card text-center">
-  <div class="card-body">
-    <h4>Administra solicitud</h3>
-  </div>
+
+<div class="container">
+<nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <h6 style="color:black;">  
+                <p align="center"><FONT FACE="Segoe UI" FONT SIZE="6"> Administra Solicitudes </FONT></p>  
+            </h6>
+          </div>
+        </div>
+      </nav>
+
+      
+<div class="container">
+
 </div>
+</div>
+
     
 </body>
 </html>

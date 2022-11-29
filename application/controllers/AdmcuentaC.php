@@ -7,6 +7,7 @@ class AdmcuentaC extends CI_Controller{
         $data['administrador'] = $this->AdmCuentaM->getcuenta();
 
         $this->load->view('AdmCuenta/AdmvercuentaV.php',$data);
+        $this->load->view('vistamenu/menuV.php');
 
     }
 

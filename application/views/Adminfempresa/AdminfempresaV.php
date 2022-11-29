@@ -22,23 +22,37 @@
 
 </head>
 <body>
-<div class="card text-center">
-  <div class="card-body">
-    <h4>Información de la empresa - Fletes y Mudanzas San Mateo</h3>
+
+
+
+
+
+
+<div class="container">
+
+<nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <h6 style="color:black;">  
+                <p align="center"><FONT FACE="Segoe UI" FONT SIZE="6">Información de la empresa</FONT></p>  
+            </h6>
+          </div>
+      </nav>
+
+      <h3 class="center">Fletes y mudanzas San Mateo</h3>
+<div class="container">
+
+<?php foreach ($infoempresa as $key): ?>
+<p class="contenedor" > <?=$key->descripcion?> </p>
+  <a class="btn btn-success" href="<?=base_url('index.php/AdmInfoempresaC/updateinfoempresas/').$key->Idinfoempresa?>"> Editar informacion</a>
+  <?php endforeach ?>
+
   </div>
 </div>
 
-<?php foreach ($infoempresa as $key): ?>
-
-<p  class="contenedor" > <?=$key->descripcion?> </p>
-<div class="card text-center">
-</div>
-
-<a class="btn btn-primary btn-lg" href="<?=base_url('index.php/AdmInfoempresaC/updateinfoempresas/').$key->Idinfoempresa?>">Editar informacion</a>
 
 
 
-<?php endforeach ?>
+
     
 </body>
 </html>

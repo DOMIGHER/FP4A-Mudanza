@@ -8,6 +8,7 @@ class AdmInfoempresaC extends CI_Controller{
         $data['infoempresa'] = $this->AdminfempresaM->getinfcuenta();
         
         $this->load->view('Adminfempresa/AdminfempresaV.php',$data);
+        $this->load->view('vistamenu/menuV.php');
 
     }
 

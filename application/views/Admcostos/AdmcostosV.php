@@ -9,8 +9,15 @@
 </head>
 <body>
 <div class="container">
-    <h1>Administrar costos</h1>
-    <h1>------------------------------------------------------------ </h1>
+<nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <h6 style="color:black;">  
+                <p align="center"><FONT FACE="Segoe UI" FONT SIZE="6"> Administra Costos </FONT></p>  
+            </h6>
+          </div>
+        </div>
+      </nav>
+
 <div class="container">
     <a class="btn btn-success" href="<?=base_url('index.php/AdmcostosC/incertarcostos/')?>">Insertar Costos</a>
     

@@ -6,6 +6,7 @@ class AdmcostosC extends CI_Controller{
         $data['costo'] = $this->AdmcostosM->getcostos();
 
         $this->load->view('Admcostos/AdmcostosV.php',$data);
+        $this->load->view('vistamenu/menuV.php');
     }
 
     public function detallecostos($idpagototal){
