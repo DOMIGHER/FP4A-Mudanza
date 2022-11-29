@@ -21,6 +21,8 @@ class AdmInfoempresaC extends CI_Controller{
 
     $this->load->library('form_validation');
 
+    $this->form_validation->set_rules('descripcion','descripcion', 'required');
+
     if($this->form_validation->run() == FALSE){
 
         $this->load->view('Adminfempresa/AdmeditinfempresaV.php',$data);

@@ -30,6 +30,8 @@ class AdmcostosC extends CI_Controller{
 
         $this->load->library('form_validation');
         
+        $this->form_validation->set_rules('pago_caseta','pago_caseta', 'required');
+        
 
         if($this->form_validation->run() == FALSE){
 
