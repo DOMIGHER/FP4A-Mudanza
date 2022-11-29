@@ -16,7 +16,7 @@
 <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <h6 style="color:black;">  
-                <p align="center"><FONT FACE="Segoe UI" FONT SIZE="6"> Administra Empleado </FONT></p>  
+                <p align="center"><FONT FACE="Segoe UI" FONT SIZE="6"> Administra Cuenta </FONT></p>  
             </h6>
           </div>
         </div>
