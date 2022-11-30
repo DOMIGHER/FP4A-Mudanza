@@ -29,12 +29,10 @@ class AdmcostosC extends CI_Controller{
         $this->load->helper(array('form', 'url'));
 
         $this->load->library('form_validation');
-        
         $this->form_validation->set_rules('pago_caseta','pago_caseta', 'required');
         
 
         if($this->form_validation->run() == FALSE){
-
             $this->load->view('Admcostos/insertcostosV.php');
 
         }else {
@@ -42,7 +40,33 @@ class AdmcostosC extends CI_Controller{
             redirect(base_url('index.php/AdmcostosC/Showpagototal'),'refresh');
              
         }
-    }  
+    }
+
+
+    public function updatecostos($idpagototal){
+        $this->load->model('AdmcostosM');
+        $data['costos'] = $this->AdmcostosM->vercostos($idpagototal);
+        $this->load->helper(array('form', 'url'));
+
+
+
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('pago_caseta','pago_caseta', 'required');
+        
+
+        if($this->form_validation->run() == FALSE){
+
+            $this->load->view('Admcostos/updatecostosV.php',$data);
+
+        }else {
+            $this->AdmcostosM->modificacosto($idpagototal);
+            redirect(base_url('index.php/AdmcostosC/Showpagototal'),'refresh');
+             
+        }
+    }
+    
+    
+
 
 }
 ?>

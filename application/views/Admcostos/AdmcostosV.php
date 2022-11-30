@@ -27,8 +27,9 @@
             <thead>
                 <th>IdCostos</th>
                 <th>Pago total</th>
-                <th>Editar costos</th>
-                <th>Eliminar costo</th>
+                <th>Consultar costos</th>
+                <th>Eliminar costos</th>
+                <th>Modificar costos</th>
             </thead>
             <tbody>
             <?php foreach ($costo as $key):?>
@@ -37,6 +38,7 @@
                     <td><?=$key->pago_total?></td>
                     <td><a class="btn btn-success" href="<?=base_url('index.php/AdmcostosC/detallecostos/').$key->idpagototal?>">Consultar costo</a></td>
                     <td><a class="btn btn-danger" href="<?=base_url('index.php/AdmcostosC/borrarcostos/').$key->idpagototal?>">Eliminar costo</a></td>
+                    <td><a class="btn btn-warning" href="<?=base_url('index.php/AdmcostosC/updatecostos/').$key->idpagototal?>">Modifica costo</a></td>
                    </tr>
                 <?php endforeach ?>
             </tbody>
