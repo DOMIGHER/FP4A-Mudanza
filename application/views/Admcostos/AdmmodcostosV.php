@@ -9,9 +9,7 @@
 </head>
 <body>
 <div class="container">
-    <h1>Administrar costos</h1>
-    <h1>------------------------------------------------------------ </h1>
-<div class="container">
+    
 
     <div class="container">
 

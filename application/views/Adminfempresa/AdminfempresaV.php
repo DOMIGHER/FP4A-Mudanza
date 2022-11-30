@@ -38,11 +38,11 @@
           </div>
       </nav>
 
-      <h3 class="center">Fletes y mudanzas San Mateo</h3>
 <div class="container">
+<h2>Empresa fletes y mudanzas san mateos</h2>
 
 <?php foreach ($infoempresa as $key): ?>
-<p class="contenedor" > <?=$key->descripcion?> </p>
+<p  > <?=$key->descripcion?> </p>
   <a class="btn btn-success" href="<?=base_url('index.php/AdmInfoempresaC/updateinfoempresas/').$key->Idinfoempresa?>"> Editar informacion</a>
   <?php endforeach ?>
 

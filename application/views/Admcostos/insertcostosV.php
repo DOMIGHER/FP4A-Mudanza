@@ -11,33 +11,38 @@
 <body>
 
 <div class="container">
-    <h1>Administrar costos</h1>
-    <h1>------------------------------------------------------------ </h1>
+    
  </div>
     <div class="container">
     <?php echo validation_errors(); ?>
         <form action="<?=base_url('index.php/AdmcostosC/incertarcostos')?>" method="POST">
 
+            <label>Id pago total: </label>
+            <input type="text" class="form-control" min="1" name="idpagototal">
+
             <label>Pago caseta: </label>
-            <input type="number" class="form-control" min="1" nombre="pago_caseta">
+            <input type="number" class="form-control" min="1" name="pago_caseta">
 
             <label>Pago gasolina: </label>
-            <input type="number" class="form-control" min="1" nombre="pago_gasolina">
+            <input type="number" class="form-control" min="1" name="pago_gasolina">
 
             <label>Pago trasporte: </label>
-            <input type="number" class="form-control" min="1" nombre="pago_trasporte">
+            <input type="number" class="form-control" min="1" name="pago_trasporte">
 
             <label>Pago empleado: </label>
-            <input type="number" class="form-control" min="1" nombre="pago_empleado">
+            <input type="number" class="form-control" min="1" name="pago_empleado">
 
             <label>Pago objeto pequeño: </label>
-            <input type="number" class="form-control" min="1" nombre="pago_objeto_pequeno">
+            <input type="number" class="form-control" min="1" name="pago_objeto_pequeno">
 
             <label>Pago objeto mediano: </label>
-            <input type="number" class="form-control" min="1" nombre="pago_objeto_mediano">
+            <input type="number" class="form-control" min="1" name="pago_objeto_mediano">
             
             <label>Pago objeto grande: </label>
-            <input type="number" class="form-control" min="1" nombre="pago_objeto_grande">
+            <input type="number" class="form-control" min="1" name="pago_objeto_grande">
+
+            <label>Pago total: </label>
+            <input type="number" class="form-control" min="1" name="pago_total">
 
             <input class="btn btn-success" type="submit" >
 
