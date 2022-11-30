@@ -124,6 +124,7 @@ svg
             <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdmcuentaC/showcuenta/')?>">Administrar Cuenta</a></li><br>
 
             <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdmsolicitudC/verSolicitud/')?>">Administrar Solicitud</a></li>
+            <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdmreporteC/show/')?>">Administrar Reportes</a></li>
             <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdmEm/show/')?>">Administra Empleado</a></li>  
             <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdmCam/show/')?>">Administra Camioneta</a></li>
             <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdmcostosC/Showpagototal/')?>">Administra Costos</a></li><br>
