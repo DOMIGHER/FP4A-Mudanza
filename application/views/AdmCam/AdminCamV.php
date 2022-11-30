@@ -33,6 +33,7 @@
                 <th>ID</th>
                 <th>Modelo</th>
                 <th>Tipo de vehiculo</th>
+                <th>Operaciones</th>
             </thead>
             <tbody>
                 <?php foreach ($camioneta as $key) : ?>
