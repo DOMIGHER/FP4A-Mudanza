@@ -80,7 +80,7 @@ h6
     input[type="checkbox"]
 {
     position: fixed;
-    right: 1170px;
+    right: 1270px;
     top: 20px;
     width: 50px;
     height: 50px;
@@ -91,7 +91,7 @@ h6
 .icon
 {
     position: fixed;
-    right: 1170px;
+    right: 1270px;
     top:10px;
     width: 50px;
     height: 50px;
@@ -128,7 +128,7 @@ ul
     margin-bottom: 100px;
     padding: 0;
     box-sizing: border-box;
-    width: 600px;
+    width: 300px;
     height: 100vh;
     background: #A6C8AF;
     transition: 0.5s;
@@ -265,7 +265,6 @@ ul li a:hover
               </div>
           </div>
         
-
           <div class="col-4">
               <div class="mb-3">
                   <label style="width : 100px; heigth : 100px" class="form-kabel"> <FONT FACE="Segoe UI" SIZE="3"> Sexo: </FONT> </label>
@@ -278,7 +277,7 @@ ul li a:hover
 
           <div class="col-4">
               <div class="mb-3">
-                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Telefono fijo: </FONT> </label>
+                  <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Teléfono fijo: </FONT> </label>
                    <input type="text" class="form-control">
                </div>
           </div>
@@ -358,16 +357,6 @@ ul li a:hover
                     <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> Calle: </FONT> </label>
                     <input type="text" class="form-control">
                </div>
-          </div>
-
-          <div class="col-4">
-              <div class="mb-3">
-                  <label style="width : 100px; heigth : 100px" class="form-kabel"> <FONT FACE="Segoe UI" SIZE="3"> Sexo: </FONT> </label>
-                   <select name="Sexo" id="Sexo">
-                      <option value="M"> Masculino  </option>
-                      <option value="F"> Femenino </option>
-                  </select>
-              </div>
           </div>
 
           <div class="col-4">
@@ -479,16 +468,6 @@ ul li a:hover
 
           <div class="col-4">
               <div class="mb-3">
-                  <label style="width : 100px; heigth : 100px" class="form-kabel"> <FONT FACE="Segoe UI" SIZE="3"> Sexo: </FONT> </label>
-                   <select name="Sexo" id="Sexo">
-                      <option value="M"> Masculino  </option>
-                      <option value="F"> Femenino </option>
-                  </select>
-              </div>
-          </div>
-
-          <div class="col-4">
-              <div class="mb-3">
                   <label class="form-label"> <FONT FACE="Segoe UI" SIZE="3"> No. Exterior: </FONT> </label>
                    <input type="text" class="form-control">
                </div>
@@ -589,7 +568,7 @@ ul li a:hover
     <div class="row">
         <div class="col-6">
             <div class="mb-3">
-                <a style="background-color:rgb(243, 220, 224); color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarSolicitudC/show/')?>">
+                <a style="background-color:rgb(243, 220, 224); color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/EnviarSolicitudC/AdminSolicitud/')?>">
                      Enviar solicitud
                  </a>
              </div>

@@ -143,15 +143,15 @@ ul li a:hover
         </h6>
       </div>
     </div>
-  </nav>
+  </nav><br>
   
 <div>
   <h5>
 
   <div>
         <h3>
-          <input type="checkbox" name="">
-          <span class="icon"></span>
+        <input type="checkbox" name="">
+        <span class="icon"></span>
             <ul><br>
               <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/ModificarCuentaC/show/')?>">Administrar cuenta</a></li><br>
               <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarSolicitudC/show/')?>">Administrar solicitud</a></li>
@@ -170,9 +170,9 @@ ul li a:hover
 <div class="col-4">
     <div class="mb-3">
          <label class="form-kabel" style= "color:red">Clasificación de objeto: </label>
-         <select name="objeto" id="objeto">
-             <option value="E">Explosivos </option>
+         <select name="objeto" id="objeto" disable>
              <option value="F">Fragiles</option>
+             <option value="E">Explosivos </option>
              <option value="C">Corrosivos</option>
              <option value="G">Gases</option>
              <option value="LI">Liquidos inflamables</option>
@@ -185,38 +185,40 @@ ul li a:hover
 <div class="col-4">
     <div class="mb-3">
         <label class="form-label" style= "color:red">Número de objetos pequeños: </label>
-         <input type="text" class="form-control">
+         <input type="text" placeholder="9" class="form-control">
      </div>
 </div>
 
 <div class="col-4">
     <div class="mb-3">
          <label class="form-label" style= "color:red">Número de objetos medianos: </label>
-         <input type="text" class="form-control">
+         <input type="text" placeholder="4" class="form-control">
      </div>
 </div>
 
 <div class="col-4">
     <div class="mb-3">
         <label class="form-label" style= "color:red">Número de objetos grandes: </label>
-        <input type="text" class="form-control">
+        <input type="text"  placeholder="3" class="form-control">
     </div>
-</div>
+</div> <br>
 
 
 </h5>
 </div>
 
 <div align="center">
-  <h5>
-<br>
+  <h5><br>
 <p style="margin-left:-500px; margin-top:100px; color:black; font-size:60px;"> + </p>
 
-<div style="margin-bottom: 100px; margin-top: -60px;">
-  <label for="avatar"></label>
-  <input type="file" name="avatar" id="avatar"> 
-</div>               
+                <div align="center">
+                  <a href="https://www.google.com/search?q=imagenes+de+habitaciones&sxsrf=ALiCzsZTHAbX5m00RJAvAQmfd3PWgW4TRQ:1668883407287&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi8u6aV87r7AhWzJ0QIHVYrCDUQ_AUoAXoECAMQAw"><img src="https://www.hoteljulimar.com/wp-content/uploads/2021/03/Habitacion-Matrimonio.jpg"  width="300px" height="250px" style="margin-top:-185px;" title="made at imgflip.com"/></a>
+                </div><br>
 
+                <div style="margin-bottom: 30px; margin-top: 3px;">
+                <label for="avatar"></label>
+                <input type="file" name="avatar" id="avatar"> 
+</div> 
  <br>
    </h5>
 </div>
@@ -225,19 +227,18 @@ ul li a:hover
   <h5> <br>
                         <div class= "container">
                           <p style= "color:red" width="600px">Descripción de los objetos: </p>
-                                <textarea type="text" class="input" v-model="newItem" @servicios,web="addItem()"></textarea>
+                                <textarea type="text"  placeholder="9 objetos pequeños, 4 medianos y 3 chicos."  class="input" v-model="newItem" @servicios,web="addItem()"></textarea>
                             </div> <br>
                           
    </h5>
 </div>
-
 
 <div align="center">
   <h5> <br>
                     <div class="row">
                             <div class="col-6">
                                 <div class="mb-3">
-                                    <a style="background-color:rgb(243, 220, 224); color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/AgregarHabitacionC/GuardarHabitacion/')?>">
+                                    <a style="background-color:rgb(243, 220, 224); color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/EnviarSolicitudC/SalvarHabitacion/')?>">
                                         Guardar
                                     </a>
                                 </div>
@@ -257,6 +258,7 @@ ul li a:hover
         </div>
     </h5>
 </div> 
+<br>
          
 </body>
 </html>

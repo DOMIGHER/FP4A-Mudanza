@@ -12,7 +12,10 @@ class AgregarHabitacionC extends CI_Controller
         $this->load->view('Cliente/2.EnviarSolicitud.php');
     }
 
-	
+	public function GuardarHabitacion()
+	{
+        $this->load->view('Cliente/2.2GuardarHabitacion.php');
+    }
 
 
 

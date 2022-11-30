@@ -169,7 +169,7 @@ ul li a:hover
 
 <div class="col-4">
     <div class="mb-3">
-         <label class="form-kabel" style= "color:red">Clasificación de objeto: </label>
+         <label class="form-kabel" style= "color:red">Clasificacion de objeto: </label>
          <select name="objeto" id="objeto">
              <option value="E">Explosivos </option>
              <option value="F">Fragiles</option>
@@ -212,11 +212,9 @@ ul li a:hover
 <br>
 <p style="margin-left:-500px; margin-top:100px; color:black; font-size:60px;"> + </p>
 
-<div style="margin-bottom: 100px; margin-top: -60px;">
-  <label for="avatar"></label>
-  <input type="file" name="avatar" id="avatar"> 
-</div>               
-
+                <div align="center">
+                  <a href="https://www.google.com/search?q=imagenes+de+habitaciones&sxsrf=ALiCzsZTHAbX5m00RJAvAQmfd3PWgW4TRQ:1668883407287&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi8u6aV87r7AhWzJ0QIHVYrCDUQ_AUoAXoECAMQAw"><img src="https://www.hoteljulimar.com/wp-content/uploads/2021/03/Habitacion-Matrimonio.jpg"  width="300px" height="250px" style="margin-top:-185px;" title="made at imgflip.com"/></a>
+                </div>
  <br>
    </h5>
 </div>
@@ -231,13 +229,12 @@ ul li a:hover
    </h5>
 </div>
 
-
 <div align="center">
   <h5> <br>
                     <div class="row">
                             <div class="col-6">
                                 <div class="mb-3">
-                                    <a style="background-color:rgb(243, 220, 224); color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/AgregarHabitacionC/GuardarHabitacion/')?>">
+                                    <a style="background-color:rgb(243, 220, 224); color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/AgregarHabitacionC/CrearSolicitud/')?>">
                                         Guardar
                                     </a>
                                 </div>

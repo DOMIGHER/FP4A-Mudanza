@@ -162,11 +162,30 @@ svg
         </div>    
       
       <div class="d-grid gap-2 col-6 mx-auto  align-items-center vh-100" >
-        <a style=" margin-top: -650px; background-color:rgb(243, 220, 224); color:black " 
+        <a style=" margin-top: -700px; background-color:rgb(243, 220, 224); color:black " 
           class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarSolicitudC/CrearSolicitud/')?>"><p align="center"><FONT FACE="Segoe UI" FONT SIZE="6"> Crear solicitud </FONT></p>
         </a>
       </div><br>
 
+      <div>
+       <h5>
+        <p align="center"><FONT FACE="Segoe UI" FONT SIZE="6"> Solicitud 01 </FONT></p>  
+       </h5>
+      </div>
+
+      <div align="right" style= "padding:0px 100px 0px 0px">
+       <div class="btn-group" role="group" aria-label="Basic outlined example">
+        <a style="background-color:white; color:black;" class="btn btn-dark" type="button" href="<?=base_url('index.php/EnviarSolicitudC/Regresar/')?>">
+                 Consultar solicitud
+        </a> 
+        <a style="background-color:white; color:black;" class="btn btn-dark" type="button" href="<?=base_url('index.php/EnviarSolicitudC/Editar/')?>">
+                 Editar solicitud
+        </a> 
+        <a style="background-color:white; color:black;" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarReporteC/Delete/')?>">
+                 Eliminar solicitud
+        </a> 
+      </div>
+    </div>
 </div>
 
   </body>

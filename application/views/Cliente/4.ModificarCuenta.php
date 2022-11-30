@@ -31,7 +31,7 @@
 input[type="checkbox"]
 {
     position: fixed;
-    right: 1170px;
+    right: 1270px;
     top: 20px;
     width: 50px;
     height: 50px;
@@ -42,7 +42,7 @@ input[type="checkbox"]
 .icon
 {
     position: fixed;
-    right: 1170px;
+    right: 1270px;
     top:10px;
     width: 50px;
     height: 50px;
@@ -139,11 +139,11 @@ ul li a:hover
               <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/ModificarCuentaC/show/')?>">Administrar cuenta</a></li><br>
               <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarSolicitudC/show/')?>">Administrar solicitud</a></li>
               <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarReporteC/show/')?>">Administrar reporte</a></li><br>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/InformacionEmpresaC/show/')?>">Informacion de la empresa</a></li>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Usuario/login/')?>">Cerrar sesion</a></li>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/InformacionEmpresaC/show/')?>">Información de la empresa</a></li>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Usuario/login/')?>">Cerrar sesión</a></li>
             </ul>
         </h3>
-      </div>
+    </div>
 
 
   <div>
@@ -154,70 +154,77 @@ ul li a:hover
 <div class="container">
 <div class="column" align="center" style="margin-top: -70px;">
 
+<?php foreach ($cliente as $key): ?>
+
 <div class="col-4">
     <div class="mb-3">
         <label class="form-label" style= "color:red"> Nombre(s): </label>
-         <input type="text" readonly=»readonly»  class="form-control">
+         <input type="text" readonly=»readonly»  class="form-control" name="nombre" value="<?=$key->nombre?>">
      </div>
 </div>
 
 <div class="col-4">
     <div class="mb-3">
          <label class="form-label"  style= "color:red">Apellido paterno: </label>
-         <input type="text" readonly=»readonly» class="form-control">
+         <input type="text" readonly=»readonly» class="form-control" name="apellido_paterno" value="<?=$key->apellido_paterno?>">
      </div>
 </div>
 
 <div class="col-4">
     <div class="mb-3">
         <label class="form-label"  style= "color:red">Apellido materno: </label>
-        <input type="text" readonly=»readonly» class="form-control">
+        <input type="text" readonly=»readonly» class="form-control" name="apellido_materno" value="<?=$key->apellido_materno?>">
     </div>
 </div>
 
 <div class="col-4">
     <div class="mb-3">
         <label class="form-label"  style= "color:red">Correo eléctronico: </label>
-        <input type="text" readonly=»readonly» class="form-control">
+        <input type="text" readonly=»readonly» class="form-control" name="correo" value="<?=$key->correo?>">
     </div>
 </div>
 
 <div class="col-4">
     <div class="mb-3">
         <label class="form-label"  style= "color:red">Celular: </label>
-        <input type="text" readonly=»readonly» class="form-control">
+        <input type="text" readonly=»readonly» class="form-control" name="celular" value="<?=$key->celular?>">
     </div>
 </div>
 
 <div class="col-4">
     <div class="mb-3">
         <label class="form-label"  style= "color:red">País: </label>
-        <input type="text" readonly=»readonly» class="form-control">
+        <input type="text" readonly=»readonly» class="form-control" name="pais" value="<?=$key->pais?>">
     </div>
 </div>
 
 <div class="col-4">
     <div class="mb-3">
         <label class="form-label" style= "color:red">Sexo: </label>
-        <input type="text" readonly=»readonly»  class="form-control">
+        <input type="text" readonly=»readonly»  class="form-control" name="sexo" value="<?=$key->sexo?>">
     </div>
 </div>
 
 <div class="col-4">
     <div class="mb-3">
         <label class="form-label"  style= "color:red">Fecha de nacimiento: </label>
-        <input type="text" readonly=»readonly» class="form-control">
+        <input type="text" readonly=»readonly» class="form-control" name="fecha_nacimiento" value="<?=$key->fecha_nacimiento?>">
     </div>
-</div> <br>
+</div> 
+
+<?php endforeach ?>
+</div>
+</div>
+<br>
 <br>
 <br>
 
 
-<div align="right">
-<div class="row">
+    <div align="center">
+    <div class="row">
     <div class="col-6">
         <div class="mb-3">
-             <a style="background-color:white; color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/ModificarCuentaC/modify/')?>">
+             <a style="background-color:white; color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/ModificarCuentaC/modify/').$key->idcliente?>">
                  Modificar cuenta
             </a>
          </div>
@@ -230,8 +237,8 @@ ul li a:hover
              </a>
          </div>
      </div>
+     <div>
 
-</div>
-  
+
 </body>
 </html>

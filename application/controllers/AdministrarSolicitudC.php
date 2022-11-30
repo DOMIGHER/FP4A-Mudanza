@@ -12,6 +12,10 @@ class AdministrarSolicitudC extends CI_Controller
         $this->load->view('Cliente/2.EnviarSolicitud.php');
     }
 
+    public function ConsultarSolicitud()
+	{
+        $this->load->view('Cliente/8.1ConsultarSolicitudes.php');
+    }
 
 	}
 

@@ -17,6 +17,16 @@ class AdministrarReporteC extends CI_Controller
         $this->load->view('Advertencia/Crash.php');
 	}
 
+	public function ShowIt()
+	{
+        $this->load->view('Experimento/index.html');
+	}
+
+	public function news()
+	{
+        $this->load->view('Cliente/7.1AdministrarReporte.php');
+	}
+
 	public function Borrar()
 	{
         $this->load->view('Advertencia/Delete.php');

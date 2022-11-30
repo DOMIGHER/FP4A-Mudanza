@@ -31,7 +31,7 @@
 input[type="checkbox"]
 {
     position: fixed;
-    right: 1170px;
+    right: 1270px;
     top: 20px;
     width: 50px;
     height: 50px;
@@ -42,7 +42,7 @@ input[type="checkbox"]
 .icon
 {
     position: fixed;
-    right: 1170px;
+    right: 1270px;
     top:10px;
     width: 50px;
     height: 50px;
@@ -140,8 +140,8 @@ ul li a:hover
               <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/ModificarCuentaC/show/')?>">Administrar cuenta</a></li><br>
               <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarSolicitudC/show/')?>">Administrar solicitud</a></li>
               <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdministrarReporteC/show/')?>">Administrar reporte</a></li><br>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/InformacionEmpresaC/show/')?>">Informacion de la empresa</a></li>
-              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Usuario/login/')?>">Cerrar sesion</a></li>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/InformacionEmpresaC/show/')?>">Información de la empresa</a></li>
+              <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Usuario/login/')?>">Cerrar sesión</a></li>
             </ul>
         </h3>
       </div>
@@ -156,92 +156,81 @@ ul li a:hover
 
 
 <div class="container">
-<?php echo validation_errors(); ?>
-<form action="<?=base_url('index.php/ModificarCuentaC/modify/') ?>" method="POST">
-
 <div class="column" align="center" style="margin-top:-190px;">
+
+<?php echo validation_errors(); ?>
+    <form action="<?= base_url('index.php/ModificarCuentaC/modify/').$cliente[0]->idcliente?>" method="POST">
 
 <div class="col-4">
     <div class="mb-3">
         <label class="form-label" style= "color:red"> Nombre(s): </label>
-         <input type="text" class="form-control" name="Nombre(s)">
+         <input type="text" class="form-control" name="nombre" value="<?= $cliente[0]->nombre?>">
      </div>
 </div><br>
 
 <div class="col-4">
     <div class="mb-3">
          <label class="form-label" style= "color:red">Apellido paterno: </label>
-         <input type="text" class="form-control">
+         <input type="text" class="form-control" name="apellido_paterno" value="<?= $cliente[0]->apellido_paterno?>">
      </div>
 </div>
 
 <div class="col-4">
     <div class="mb-3">
         <label class="form-label" style= "color:red">Apellido materno: </label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" name="apellido_materno" value="<?= $cliente[0]->apellido_materno?>">
     </div>
 </div>
 
 <div class="col-4">
     <div class="mb-3">
         <label class="form-label" style= "color:red">Correo eléctronico: </label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" name="correo" value="<?= $cliente[0]->correo?>">
     </div>
 </div>
 
 <div class="col-4">
     <div class="mb-3">
         <label class="form-label" style= "color:red">Celular: </label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" name="celular" value="<?= $cliente[0]->celular?>">
     </div>
 </div>
 
 <div class="col-4">
     <div class="mb-3">
-         <label class="form-kabel" style= "color:red">País: </label>
-         <select name="pais" id="pais">
-             <option value="M">México </option>
-             <option value="F">Francia</option>
-             <option value="C">Colombia</option>
-             <option value="G">Grecia</option>
-             <option value="L">Londres</option>
-             <option value="S">Suecia</option>
-             <option value="O">Otro</option>
-         </select>
-     </div>
+        <label class="form-label" style= "color:red">País: </label>
+        <input type="text" class="form-control" name="pais" value="<?= $cliente[0]->pais?>">
+    </div>
 </div>
 
 <div class="col-4">
     <div class="mb-3">
-         <label class="form-kabel" style= "color:red">Sexo: </label>
-         <select name="sexo" id="sexo">
-             <option value="M">Masculino </option>
-             <option value="F">Femenino</option>
-             <option value="O">Otro</option>
-         </select>
-     </div>
+        <label class="form-label" style= "color:red">Sexo: </label>
+        <input type="text" class="form-control" name="sexo" value="<?= $cliente[0]->sexo?>">
+    </div>
 </div>
+
 
 <div class="col-4">
     <div class="mb-3">
         <label class="form-label" style= "color:red">Fecha de nacimiento: </label>
-        <input type="date" class="form-control">
+        <input type="date" class="form-control" name="fecha_nacimiento" value="<?= $cliente[0]->fecha_nacimiento?>">
     </div>
 </div>
 
 <br>
 <br>
 <br>
-<br>
+
 
 
 
 <div class="row">
     <div class="col-6">
         <div class="mb-3">
-             <a style="background-color:white; color:red" class="btn btn-dark" type="button" href="<?=base_url('index.php/ModificarCuentaC/show/')?>">
-                 Guardar
-            </a>
+             <input style="background-color:white; color:red" class="btn btn-dark" type="submit" value="Guardar">
+                 
+</input>
          </div>
      </div>
 
@@ -252,6 +241,10 @@ ul li a:hover
              </a>
          </div>
      </div>
+     </div>
+
+</div>
+
 </form>
   
 </body>

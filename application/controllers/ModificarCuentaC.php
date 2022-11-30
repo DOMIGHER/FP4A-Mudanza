@@ -4,7 +4,9 @@ class ModificarCuentaC extends CI_Controller
 {
     public function show()
 	{
-        $this->load->view('Cliente/4.ModificarCuenta.php');
+        $this->load->model('ClienteM');
+        $data['cliente'] = $this->ClienteM->getDatos();
+        $this->load->view('Cliente/4.ModificarCuenta.php',$data);
 	}
 
     public function bye()
@@ -12,23 +14,23 @@ class ModificarCuentaC extends CI_Controller
         $this->load->view('Advertencia/LogOut.php');
 	}
 
-    public function modify()
-	{
-        $this->load->helper(array('form','url'));
+    public function modify($idcliente) {
+        $this->load->model('ClienteM');
+        $data['cliente'] = $this->ClienteM->getDato($idcliente);
 
-            $this ->load->library('form_validation');
-            $this->form_validation->set_rules('Nombre(s)','Nombre(s)','required');
-             if($this->form_validation->run()==false) 
-             {
-                $this->load->view('Cliente/5.ModificarCuentas.php');
-             }
-             else
-             {
-                //$this->load->view('formsucess');
-             }
-	}
+        $this->load->helper(array('form', 'url'));
+
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('nombre', 'nombre', 'required');
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view('Cliente/5.ModificarCuentas.php',$data);
+        } else {
+            $this->ClienteM->EditarC($idcliente);
+            redirect(base_url('index.php/ModificarCuentaC/show'), 'refresh');
+        }
+    }
 
 }
-
 
 ?>
