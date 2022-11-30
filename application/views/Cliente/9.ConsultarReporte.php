@@ -92,7 +92,7 @@ h6
 input[type="checkbox"]
 {
     position: fixed;
-    right: 1270px;
+    right: 1170px;
     top: 20px;
     width: 50px;
     height: 50px;
@@ -103,7 +103,7 @@ input[type="checkbox"]
 .icon
 {
     position: fixed;
-    right: 1270px;
+    right: 1170px;
     top:10px;
     width: 50px;
     height: 50px;
