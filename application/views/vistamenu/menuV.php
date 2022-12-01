@@ -130,7 +130,8 @@ svg
             <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdmcostosC/Showpagototal/')?>">Administra Costos</a></li><br>
 
             <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/AdmInfoempresaC/verinformacionempresa/')?>">Informacion de la empresa</a></li><br>
-              
+            <li><a style=" width : 290px; background-color:white; color:black" class="btn btn-dark" type="button" href="<?=base_url('index.php/Usuario/login/')?>">Cerrar secion</a></li><br>
+
               </ul>
           </h3>
         </div> 
